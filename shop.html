@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+    <script src="shop.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="shop.css" />
+</head>
+
+
+<body>
+
+<!--Background-->
+<div class="ban"  style="background-image: url('ORVZE10.jpg');width: 1400px;
+height:2500px; overflow:hidden;    margin-top: -20px;margin-left:0px;  ">
+
+
+<center style="border-style: solid;background-color: maroon;
+border-width: 3px; width: 500px; margin-left:500px;  color: rgb(66, 198, 250)"><h1>GOOD MORNING</h1>
+<p style="color: white;text-shadow: 2px 2px #000000; font-size: 25px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+    <b>
+        "I say let the world go to hell, but I should always have my tea."</b></p></center>
+
+
+
+
+        <div class="grid-container" style="background-color: goldenrod; width: 800px; height: 2500px; margin-left:400px" >
+
+            
+                   
+            <div class="grid-item item4" style="margin-left:50px; " ><h3 style=" padding-top:100px"> French Croissant:  $1.80</h3>
+               <img src="croissant-psd49504.png" width="100px" height="100px"  alt="" ><a href=""><i class="fa fa-heart"></i></a><a href=""><i class="fa fa-close"></i></a>
+           
+              <button id="btn1" class="button1"onclick="result1()" style="margin-left:150px"> JE COMMANDE </button>
+              <input  style=" width: 100px"type='number' id= 'num1'min="0" max="100" name='quantity2' value='0' class='qty' />
+              <h1> Prix </h1> <h class="label" id=tot1></h></div>
+
+              <div class="grid-item item4" style="margin-left:50px" ><h3> Donuts:  $3.90</h3>
+                <img src="donuts (1).jpg" width="100px" height="100px"   alt=""><a  href=""><i class="fa fa-heart"></i></a><a href=""><i class="fa fa-close"></i></a>
+              <button id="btn2" class="button1"onclick="result2()" style="margin-left:150px">  JE COMMANDE  </button>
+              <input  style=" width: 100px" type='number' id= 'num2'min="0" max="100" name='quantity3' value='0' class='qty' />
+              <h1> Prix</h1> <h class="label" id=tot2></h></div>
+           
+            <div class="grid-item item4" style="margin-left:50px" ><h3> Macaron:  $5.70</h3>
+              <img src="Macaron.png" width="100px" height="100px"   alt=""><a  href=""><i class="fa fa-heart"></i></a><a href=""><i class="fa fa-close"></i></a>
+              <button id="btn3" class="button1"onclick="result3()" style="margin-left:150px"> JE COMMANDE  </button>
+              <input  style=" width: 100px" type='number' id= 'num3'min="0" max="100" name='quantity4' value='0' class='qty' />
+              <h1> Prix </h1> <h class="label" id=tot3></h></div>
+           
+            <div class="grid-item item4" style="margin-left:50px" ><h3>Milles Feuilles vanille:  $5.00</h3>
+              <img src="millefeuille-vanille.jpg"  width="100px" height="100px"   alt=""><a   href=""><i class="fa fa-heart"></i></a><a href=""><i class="fa fa-close"></i></a>
+              <button id="btn4" class="button1"onclick="result4()" style="margin-left:150px">  JE COMMANDE </button>
+              <input style=" width: 100px" type='number' id= 'num4'min="0" max="100" name='quantity5' value='0' class='qty' />
+              <h1> Prix </h1> <h class="label" id=tot4></h></div>
+                       
+            <div class="grid-item item4" style="margin-left:50px" ><h3> Sorbet:  $6.50</h3>
+               <img src="raspberry-sorbet.gif" width="100px" height="100px"   alt=""><a  href=""><i class="fa fa-heart"></i></a><a href=""><i class="fa fa-close"></i></a>
+              <button id="btn5" class="button1"onclick="result5()" style="margin-left:150px">  JE COMMANDE  </button>
+              <input  style=" width: 100px" type='number' id= 'num5'min="0" max="100" name='quantity6' value='0' class='qty' />
+              <h1> Prix </h1> <h class="label" id=tot5></h></div>
+           
+            <div class="grid-item item4" style="margin-left:50px" ><h3> Cupcake:  $4.90</h3>
+              <img src="sidebar-cupcake.png" width="100px" height="100px"   alt=""> <a   href=""><i class="fa fa-heart"></i></a><a href=""><i class="fa fa-close"></i></a>
+              <button id="btn6" class="button1"onclick="result6()" style="margin-left:150px">  JE COMMANDE </button>
+              <input style=" width: 100px" type='number' id= 'num6'min="0" max="100" name='quantity7' value='0' class='qty' />
+              <h1> Prix </h1> <h class="label" id=tot6></h>
+            </div>
+            <div class="grid-item item4" style="margin-left:50px" ><h3> Tarte Au Citron:  $10.00</h3>
+              <img src="tarte-au-citron.jpg"  width="100px" height="100px"  alt=""> <a   href=""><i class="fa fa-heart"></i></a><a href=""><i class="fa fa-close"></i></a>
+                <button id="btn7" class="button1"onclick="result7()" style="margin-left:150px">  JE COMMANDE  </button>
+                <input  style=" width: 100px" type='number' id= 'num7'min="0" max="100" name='quantity8' value='0' class='qty' />
+                <h1> Prix </h1> <h class="label" id=tot7></h>
+              </div>
+
+              <button id="button" class="button"onclick="sommeTotale()"> TOTAL </button>
+              <input  style=" width: 100px" type='text' id= 'totale'min="0" max="100" name='quantity8' value='0' class='qty' />
+          <center>
+              <a href="payement.html" target="_blank" > <input type="button"  value="PAYEMENT"  class="boutton" style="width: 250px; height: 80px; background-color:black ; 
+                color:white; font-weight: bold; font-size: 15px"; > </a></center>
+                </div>
+
+
+
+
+
+
+
+
+</div>
+
+<div>
+
+        
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</body>
